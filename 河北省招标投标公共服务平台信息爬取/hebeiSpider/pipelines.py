@@ -15,7 +15,7 @@ class HebeispiderPipeline(object):#直接保存为csv文件
         return item
 class MysqlPipline(object): #连接 Mysql数据库保存
     def open_spider(self,spider):
-        self.connect=pymysql.connect(host='localhost',user='root',password='zjy19970929',port=3306,charset='utf8',db='河北招标')
+        self.connect=pymysql.connect(host='localhost',user='root',password='zjy19970927',port=3306,charset='utf8',db='河北招标')
         self.cursor=self.connect.cursor()
 
     def process_item(self, item, spider):
